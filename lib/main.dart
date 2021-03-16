@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import './cust.dart';
 import 'dart:math';
 
 void main() {
@@ -33,7 +34,8 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         alignment: Alignment.center,
         color: Color(0xFF2D2F41),
-        child: ClockView(),
+        // child: ClockView(),
+        child: Cust(),
       ),
     );
   }
@@ -146,7 +148,5 @@ class ClockPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return true;
-  }
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 }
